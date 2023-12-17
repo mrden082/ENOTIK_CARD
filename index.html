@@ -7,13 +7,28 @@
         </head>
         <body>
 
-            <div class="conteiner">
+            <div class="conteiner" id="user">
                 <h1 class="text">Создай своего необычного Енотика!</h1>
                 <input type="text" name="name" class="item" id="ENOT" placeholder="Имя вашего енота">
                 <input type="number" name="age" class="item" id="age" placeholder="Введите возраст вашего енота в годах">
                 <input type="number" name="height" class="item" id="height" placeholder="Введите рост вашего енота в м">
                 <input type="number" name="weight" class="item" id="weight" placeholder="Введите вес вашего енота в кг">
-                <button type="button" class="item" id="buttonenotik">Готово!</button>
+                <button type="submit" class="item" id="buttonenotik"><span class="submit-spinner submit-spinner_hide"></span>Готово!</button>
+                <button id="buttonHistory" class="item">История</button>
+                <button id="clearLocalStorageButton" class="item">Очистить историю</button>
+            </div>
+
+            <div class="conteiner1">
+                <select>
+                    <option value="name">Имя</option>
+                    <option value="age">Возраст</option>
+                    <option value="height">Рост</option>
+                    <option value="weight">Вес</option>
+                    <!-- <option value="prompt">Промт</option> -->
+                </select>
+                  <div class="select">
+
+                  </div>
             </div>
 
             <div class="histori">

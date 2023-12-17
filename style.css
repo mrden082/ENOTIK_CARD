@@ -52,6 +52,20 @@ img {
     margin:10px auto 5px;
     border-radius: 12px;
     border: 6px solid rgb(16, 8, 21);
+}
+
+.conteiner1 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 12px;
+  background: linear-gradient(to right, rgb(194, 193, 195),rgb(36, 36, 36));
+  width: 512px;
+  height: 612px;
+  margin: auto;
+  border-radius: 12px;
+  border: 6px solid rgb(16, 8, 21);
+  word-break:break-all;
 
 }
 
@@ -65,6 +79,12 @@ img {
     background-color: #d6d6d6;
 }
 
+.card {
+  background: #bebebf;
+  width: 250px;
+  height: auto;
+}
+
 button {
     width: 200px;
     height: 40px;
@@ -75,4 +95,26 @@ button {
 button:hover {
   transform: scale(1.2);
   border: 3px solid black;
+}
+
+@keyframes spinner-border {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.submit-spinner {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  vertical-align: -0.125em;
+  border: 0.2em solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  -webkit-animation: .75s linear infinite spinner-border;
+  animation: .75s linear infinite spinner-border;
+}
+
+.submit-spinner_hide {
+  display: none;
 }
