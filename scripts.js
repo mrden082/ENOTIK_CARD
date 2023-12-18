@@ -25,9 +25,6 @@ selectElement.addEventListener('change', function () {
     else if (selectedValue === 'weight') {
         selectedData = enots.map(enot => enot.weight).join(', ');
     }
-    //   else if (selectedValue === 'prompt') {
-    //     // selectedData = enots.map(enot => enot.prompt).join(', ');
-    //   }
     cardElement.textContent = selectedData;
 });
 function generateEnot(data, callback) {
@@ -132,9 +129,6 @@ buttonHistory.addEventListener('click', () => {
         const table = document.createElement('table');
         const row1 = table.insertRow();
         const row2 = table.insertRow();
-        // const promptCell = row1.insertCell(0);
-        // promptCell.colSpan = 2;
-        // promptCell.textContent = `Промт: ${prompt}`;
         const enotikCell = row2.insertCell(0);
         enotikCell.rowSpan = 2;
         enotikCell.innerHTML = `Енотик: <br> имя - ${name}; <br> рост - ${height}; <br> вес - ${weight}; <br> возраст - ${age}`;
