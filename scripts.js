@@ -1,12 +1,12 @@
 "use strict";
 const api_url = "https://visioncraftapi--vladalek05.repl.co";
 const api_key = "a1b58ede-2f6f-4167-b67b-b2608b948198";
-const model = "absolutereality_v1.8.1";
-const sampler = "LMS";
+const model = "Stable_Diffusion_v1.5";
+const sampler = "Euler";
 const image_count = 1;
 const cfg_scale = 8;
-const steps = 30;
-const loras = { "3DMM_V12": 1, "GrayClay_V1.5.5": 2, "eye_size_slider_v1": 3, "age_slider_v20": 1, };
+const steps = 40;
+const loras = { "3DMM_V12": 1, "GrayClay_V1.5.5": 2, "eye_size_slider_v1": 3, "age_slider_v20": 4, };
 let enots = [];
 const selectElement = document.querySelector('select');
 const cardElement = document.querySelector('.select');
